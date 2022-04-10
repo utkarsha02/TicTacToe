@@ -1,5 +1,6 @@
 # Misere TicTacToe
 
+![tictactoe](image/misere-tic-tac-toe-thumb.png)
 Building a reverse version of tic-tac-toe also called avoidance ttt. The Best First Move In Misere Tic-Tac-Toe (3-In-A-Row Is Losing)
 
 In misere tic-tac-toe, you want to avoid strong positions of making 3 in a row. It seems like playing in the center would be bad. However, this is the surprising part of misere tic-tac-toe.
