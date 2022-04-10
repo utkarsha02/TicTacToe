@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+#bg {
+  font-family: "Bowlby One SC", cursive;
+  text-align: center;
+  font-size: 70px;
+  color: #cd5d7d;
+  /* background-color: rgb(84, 84, 84); */
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
 td {
-  border: 2px solid #333;
+  border: 5px solid #333;
   height: 100px;
   width: 100px;
   /* stop writing center as centre */
@@ -15,7 +25,7 @@ table {
   position: absolute;
   left: 50%;
   margin-left: -155px;
-  top: 50px;
+  top: 250px;
 }
 
 table tr:first-child td {
@@ -37,8 +47,8 @@ table tr td:last-child {
 .endgame {
   display: none;
   width: 200px;
-  top: 120px;
-  background-color: rgba(205, 133, 63, 0.8);
+  top: 300px;
+  background-color: #949cdfd8;
   position: absolute;
   left: 50%;
   margin-left: -100px;
@@ -48,4 +58,47 @@ table tr td:last-child {
   border-radius: 5px;
   color: white;
   font-size: 2em;
+}
+
+body {
+  background: #f6ecf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myButton {
+  box-shadow: inset 0px 0px 15px 3px #cf56a1;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 13px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+.myButton:hover {
+  background-color: transparent;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#soccer {
+  max-width: 100%;
+  margin-left: 900px;
+  margin-top: 100px;
+  height: auto;
+}
+
+#moon {
+  max-width: 100%;
+  margin-right: 900px;
+  margin-top: 100px;
+  height: auto;
 }

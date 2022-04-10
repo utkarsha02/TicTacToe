@@ -82,7 +82,7 @@ function gameOver(gameLose) {
   for (var i = 0; i < cells.length; i++) {
     cells[i].removeEventListener("click", turnClick, false);
   }
-  declareWinner(gameLose.player == huPlayer ? "You lose." : "You win!");
+  declareWinner(gameLose.player == huPlayer ? "You lose :(" : "You win!");
 }
 
 function declareWinner(loser_name) {

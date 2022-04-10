@@ -1,3 +1,4 @@
+// This is code for normal tictactoe version with minimax
 // 1.basic setup
 // 2.determine winner
 // 3.basic AI and winner notification
@@ -76,7 +77,7 @@ function gameOver(gameWon) {
   //to prevent player from clicking more boxes and highlight winning player box
   for (let index of winnningCombos[gameWon.index]) {
     document.getElementById(index).style.backgroundColor =
-      gameWon.player == huPlayer ? "blue" : "red";
+      gameWon.player == huPlayer ? "blue" : red;
   }
   for (var i = 0; i < cells.length; i++) {
     cells[i].removeEventListener("click", turnClick, false);
