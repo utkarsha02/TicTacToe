@@ -2,7 +2,8 @@ td {
   border: 2px solid #333;
   height: 100px;
   width: 100px;
-  text-align: centre;
+  /* stop writing center as centre */
+  text-align: center;
   vertical-align: middle;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 70px;
