@@ -22,7 +22,7 @@ const cells = document.querySelectorAll(".cell");
 startGame();
 
 function startGame() {
-  document.querySelector(".endgame").getElementsByClassName.display = "none";
+  document.querySelector(".endgame").style.display = "none";
   origBoard = Array.from(Array(9).keys());
   //   console.log(origBoard);
   for (var i = 0; i < cells.length; i++) {
@@ -37,7 +37,8 @@ function turnClick(box) {
   //to disable clicked place
   if (typeof origBoard[box.target.id] == "number") {
     turn(box.target.id, huPlayer);
-    if (!checkTie()) turn(bestSpot(), aiPlayer);
+    checkTie();
+    turn(bestSpot(), aiPlayer);
   }
 }
 
@@ -98,7 +99,8 @@ function bestSpot() {
 }
 
 function checkTie() {
-  if (emptySquares().length == 0) {
+  gameLose = matched(origBoard, huPlayer);
+  if (emptySquares().length == 0 && !gameLose) {
     for (var i = 0; i < cells.length; i++) {
       cells[i].style.backgroundColor = "green";
       cells[i].removeEventListener("click", turnClick, false);
